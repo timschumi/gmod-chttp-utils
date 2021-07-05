@@ -1,0 +1,6 @@
+{
+	"title"		:	"chttp-utils",
+	"type"		:	"ServerContent",
+	"tags"		:	[],
+	"ignore"	:	[".git*", "*.md", "LICENSE", "*.gma", "icon*"]
+}
