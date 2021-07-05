@@ -16,7 +16,12 @@ chttp-utils isn't a normal module due to naming conflicts with the actual binary
 Instead, it is a normal LUA file that should be included.
 
 ```
+-- Set this if you don't want to print any error messages when the module fails to load
+-- (for example if you have your own messages or if you have fallback options).
+CHTTP_SILENT = true
+
 -- This will provide a global `chttp` table providing all the functions.
+-- The table will not be present if the module fails to load.
 include("chttp.lua")
 ```
 

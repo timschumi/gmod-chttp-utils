@@ -23,6 +23,10 @@ local function getLibExt()
 end
 
 if not pcall(require, "chttp") or CHTTP == nil then
+	if CHTTP_SILENT then
+		return
+	end
+
 	local libname = getLibExt()
 
 	ErrorNoHalt("[chttp-utils] Could not load CHTTP!\n")
