@@ -49,6 +49,7 @@ end
 
 chttp = {}
 
+-- Similar to `http.Fetch` (https://wiki.facepunch.com/gmod/http.Fetch)
 function chttp.Fetch(url, onSuccess, onFailure, headers)
 	CHTTP({
 		method = "get",
@@ -71,6 +72,7 @@ function chttp.Fetch(url, onSuccess, onFailure, headers)
 	})
 end
 
+-- Similar to `http.Post` (https://wiki.facepunch.com/gmod/http.Post)
 function chttp.Post(url, parameters, onSuccess, onFailure, headers)
 	CHTTP({
 		method = "post",
